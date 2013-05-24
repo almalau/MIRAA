@@ -1,10 +1,36 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:icecore="http://www.icefaces.org/icefaces/core"
+      xmlns:ace="http://www.icefaces.org/icefaces/components"
+      xmlns:ice="http://www.icesoft.com/icefaces/component"
+      >
     <h:head>
         <link rel="stylesheet" type="text/css" href="style/style.css" />
         <title>MIRAA</title>
+        <style type="text/css">
+            ul#menu{
+                margin: 20px;
+                padding: 0;
+                list-style-type: none;
+                color: blueviolet;
+                text-decoration: none; 
+            }
+            #menu li{
+                background-color: #83E825;
+                float: left;
+                width: 80px;
+            }
+            #menu li:hover {
+                background-color: aquamarine;
+            }
+            #menu li:hover a{
+                color: yellowgreen;
+            }
+        </style>
     </h:head>
     <h:body >
       
@@ -15,7 +41,13 @@
         </div>
         <div>
             <!--aqui va el menu del header-->
-            
+            <ul id="menu">
+                <li><a href="index.xhtml">Inicio</a></li>
+                <li><a href="servicios.xhtml">Servicios</a></li>
+                <li><a href="contactanos.xhtml">Contactanos</a></li>
+                <li><a href="productos.xhtml">Productos</a></li>
+            </ul>
+
         </div>
         <div>
             <!--aqui el menu lateral acordion-->
